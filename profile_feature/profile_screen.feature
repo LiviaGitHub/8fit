@@ -5,26 +5,26 @@ Feature: As a user, I need to have a profile.
   and user's target values like target weight and target calories.
 
   Background:
-    Given User Profile is already created with the goal to be achieved.
-    And User must be on the profile screen.
+    Given User Profile is already created with the goal to be achieved
+    And User must be on the profile screen
 
   Scenario: Check user fitness plan
     When User scroll the page to the end
     Then "My fitness plan" and "modify" should be visible
-    Then Goal, Exercise, Initial weight, Body type, Initial body fat and
-    Target body fat should be visible.
+    And Goal, Exercise, Initial weight, Body type, Initial body fat and
+    Target body fat should be visible
 
-  Scenario: Check user fitness plan
-    When User scroll the page to the end
-    Then "My target values" with Target weight and Target calories must be visible.
+  Scenario: Check user target values
+    When User scroll to the bottom of the page
+    Then "My target values" with Target weight and Target calories must be visible
     When User tap "Target weight"
     Then A window opens with information about the target weight
-    When User Click on OK
-    Then The window closes
+    When User close the window by clicking "ok"
+    Then The window is closed and the Profile screen is displayed
     When User tap "Target calories"
-    Then A window opens with information about the target calories
-    When User Click on OK
-    Then The window closes
+    Then User a window opens with information about the target calories
+    When User close the window by clicking "ok"
+    Then The window is closed and the Profile screen is displayed
 
   Scenario: Check the calendar
     Then "Your activity", "View all" and calendar are visible
@@ -39,8 +39,9 @@ Feature: As a user, I need to have a profile.
     Then Profile screen is displayed
 
   Scenario: Check the workout record
-    Given User must have complete at least one workout.
-    Then The sum of the completed "workouts" should be visible
-    When Check the sum of the exercises in the calendar
+    Given User must have complete at least one workout
+    Then The "Workouts" information below the user name must be visible
+    And The sum of the completed exercises should be visible
+    When User check the sum of the exercises in the calendar
     Then On each day the user completed a workout, a blue ball should be displayed.
-         The number of blue balls should be the same in "workouts"
+    The number of blue balls should be the same in "workouts"
