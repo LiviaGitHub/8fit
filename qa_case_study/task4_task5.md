@@ -1,4 +1,4 @@
-# Task 4: Briefly explain (100 words or less): After this bug is fixed, how would you ensure that the same issue is not introduced again in the future?
+# Task 4.
 
 * Check all bugs with a unit test.
 
@@ -6,7 +6,7 @@
 
 * The qa team can check the bugs repository as the team begins testing for some new requirement/functionality. The team should check for previous errors that may be relevant to being retested.
 
-# Task 5: One of the Customer Support Agents tell you that some users are seeing the following issue: Since they completed a workout, the “Your Activity” calendar in Profile is covered by a spinning loading animation that never disappears, and the calendar never loads. Briefly document how you would troubleshoot/investigate this issue, and how you would identify the root cause.
+# Task 5.
 
 * Collect data about the user environment. Check which version of the application the customer is using and smartphone model.
 
