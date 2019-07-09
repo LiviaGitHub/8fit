@@ -2,7 +2,7 @@
 
 * Check all bugs with a unit test.
 
-* Prepare regression suit for application. Main business processes/use cases, happy paths. Create a baseline. Set of tests that should not fail. Run it always before a release or when big changes are made, when multiple are made, when critical paths are modified. Put some effort to automate it (and this time I'm not talking about unit tests, but full end to end tests).
+* Prepare regression suit for application. Main business processes/use cases, happy paths. Create a baseline. Run it always before a release or when big changes are made, when multiple are made, when critical paths are modified. Put some effort to automate it (and this time I'm not talking about unit tests, but full end to end tests).
 
 * The qa team can check the bugs repository as the team begins testing for some new requirement/functionality. The team should check for previous errors that may be relevant to being retested.
 
