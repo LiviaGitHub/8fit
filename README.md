@@ -1,4 +1,4 @@
-# QA Case Study - 8fit
+# QA Case Study
 
 * Task 2: Take a few minutes to explore the Profile Tab of the 8fit App.
 
